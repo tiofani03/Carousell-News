@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Carousell News</string>
+    <string name="empty_state_message">No news available</string>
+    <string name="recent_news">Recent</string>
+    <string name="popular">Popular</string>
+    <string name="error_default">Ops something error, try again letter</string>
+    <string name="error_no_internet">Connection lost. Check your connection and try again.</string>
+</resources>

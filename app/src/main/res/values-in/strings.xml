@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Carousell News</string>
+    <string name="empty_state_message">Tidak ada berita yang tersedia</string>
+    <string name="recent_news">Terbaru</string>
+    <string name="popular">Populer</string>
+    <string name="error_default">Ops terjadi kesalahan, coba lagi nanti</string>
+    <string name="error_no_internet">Koneksi terputus. Periksa koneksi Anda dan coba lagi.</string>
+</resources>

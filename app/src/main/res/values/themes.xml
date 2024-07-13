@@ -1,0 +1,38 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NewsTest" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+    </style>
+
+    <style name="Theme.NewsTest" parent="Base.Theme.NewsTest" />
+
+    <style name="MyOverflowButtonStyle" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_three_dot</item>
+    </style>
+
+    <style name="textRobotoRegular">
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="textRobotoMedium">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="roboto_medium_262629_16" parent="textRobotoMedium">
+        <item name="android:textSize">@dimen/text_lg</item>
+        <item name="android:textColor">@color/gray_262629</item>
+    </style>
+
+    <style name="roboto_262629_14" parent="textRobotoRegular">
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:textColor">@color/gray_262629</item>
+    </style>
+
+    <style name="roboto_medium_8F939C_12" parent="textRobotoRegular">
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textColor">#8F939C</item>
+    </style>
+</resources>

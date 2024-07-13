@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_sm"
+    app:cardBackgroundColor="#FFF"
+    app:cardCornerRadius="@dimen/space_sm"
+    app:cardElevation="0.5dp"
+    app:strokeWidth="@dimen/space_0">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivContent"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/sample" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/roboto_medium_262629_16"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space_md"
+            android:layout_marginTop="@dimen/space_sm_md"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivContent"
+            tools:text="Congrats! You are featured on Home page as a recommended seller!" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            style="@style/roboto_262629_14"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space_md"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            tools:text="Hi rita12399, thank you for being awesome on Carousell! We want " />
+
+        <TextView
+            android:id="@+id/tvTimeAgo"
+            style="@style/roboto_medium_8F939C_12"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space_md"
+            android:layout_marginTop="@dimen/space_sm"
+            android:layout_marginBottom="@dimen/space_sm_md"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDesc"
+            tools:text="5 hours ago" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

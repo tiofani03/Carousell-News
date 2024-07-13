@@ -1,0 +1,21 @@
+dependencies {
+    api(libs.androidx.core.ktx.v1101)
+    api(libs.androidx.appcompat.v161)
+    api(libs.material.v190)
+    api(libs.junit)
+    api(libs.androidx.junit.v115)
+    api(libs.androidx.espresso.core.v351)
+
+    //retrofit
+    api(libs.retrofit)
+    api(libs.converter.gson)
+    api(libs.logging.interceptor)
+
+    //coroutine
+    api(libs.kotlinx.coroutines.core)
+    api(libs.kotlinx.coroutines.android)
+    api(libs.androidx.lifecycle.runtime.ktx)
+
+    // datastore
+    api(libs.androidx.datastore.preferences)
+}
