@@ -1,8 +1,6 @@
 package com.tiooooo.newstest.helper
 
 import com.tiooooo.data.news.api.model.News
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
 
 fun generateListNews(): List<News> {
     val list = mutableListOf<News>()

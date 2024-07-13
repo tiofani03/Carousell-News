@@ -40,7 +40,7 @@ class NetworkProvider(
 
     private fun getHttpLoggingInterceptor(): HttpLoggingInterceptor {
         val interceptor = HttpLoggingInterceptor { message ->
-            Log.d("Interceptor", message)
+            Log.d(TAG, message)
         }
         interceptor.level = HttpLoggingInterceptor.Level.BODY
         return interceptor
