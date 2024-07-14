@@ -1,6 +1,7 @@
 package com.tiooooo.newstest.ui.main
 
 import androidx.recyclerview.widget.RecyclerView
+import androidx.test.InstrumentationRegistry
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.IdlingRegistry
@@ -49,12 +50,12 @@ class MainActivityTest {
     @Test
     fun loadNewsByRecent() {
         ActivityScenario.launch(MainActivity::class.java)
-
+        val context = InstrumentationRegistry.getInstrumentation().targetContext
         onView(withContentDescription(androidx.appcompat.R.string.abc_action_menu_overflow_description)).perform(
             click()
         )
 
-        onView(withText("Recent")).perform(click())
+        onView(withText(context.getString(R.string.recent_news))).perform(click())
         onView(withId(R.id.rvNews)).check(matches(isDisplayed()))
         onView(withId(R.id.rvNews)).perform(
             RecyclerViewActions.scrollToPosition<RecyclerView.ViewHolder>(
@@ -64,14 +65,14 @@ class MainActivityTest {
     }
 
     @Test
-    fun loadNewsByOldest() {
+    fun loadNewsByRank() {
         ActivityScenario.launch(MainActivity::class.java)
 
         onView(withContentDescription(androidx.appcompat.R.string.abc_action_menu_overflow_description)).perform(
             click()
         )
-
-        onView(withText("Popular")).perform(click())
+        val context = InstrumentationRegistry.getInstrumentation().targetContext
+        onView(withText(context.getString(R.string.popular))).perform(click())
         onView(withId(R.id.rvNews)).check(matches(isDisplayed()))
         onView(withId(R.id.rvNews)).perform(
             RecyclerViewActions.scrollToPosition<RecyclerView.ViewHolder>(
